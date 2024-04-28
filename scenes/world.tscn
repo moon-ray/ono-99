@@ -1,0 +1,221 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccrsqulqdmfeq"]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_0lqy2"]
+[ext_resource type="Texture2D" uid="uid://dc6tf7pro5mq3" path="res://sprites/0.png" id="2_4nqmx"]
+[ext_resource type="Texture2D" uid="uid://b0st05wc11dbg" path="res://sprites/backside.png" id="2_v4lwb"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_0lqy2")
+
+[node name="Amount" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 97.0
+offset_right = 49.0
+offset_bottom = 120.0
+scale = Vector2(4, 4)
+text = "2323"
+
+[node name="Cardplaced" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 14.0
+offset_right = 42.0
+offset_bottom = 37.0
+scale = Vector2(4, 4)
+text = "2323"
+
+[node name="currentselected" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 172.0
+offset_right = 48.0
+offset_bottom = 195.0
+scale = Vector2(4, 4)
+text = "2323"
+
+[node name="Drawpile" type="Node2D" parent="."]
+
+[node name="Sprite2D8" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1019.95, 313.88)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1021.95, 310.88)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1024, 308.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1027, 305.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1029, 302.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1031, 300.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Drawpile"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+position = Vector2(1033, 297.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Drawpile"]
+position = Vector2(1035, 296.94)
+scale = Vector2(0.805, 0.805)
+texture = ExtResource("2_v4lwb")
+
+[node name="Player2" type="Node2D" parent="."]
+modulate = Color(0.54902, 0.54902, 0.54902, 1)
+position = Vector2(152, -205)
+scale = Vector2(0.66, 0.66)
+
+[node name="Card0" type="Sprite2D" parent="Player2"]
+position = Vector2(192.227, 480.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card1" type="Sprite2D" parent="Player2"]
+position = Vector2(344.227, 480.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card2" type="Sprite2D" parent="Player2"]
+position = Vector2(495.227, 480.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card3" type="Sprite2D" parent="Player2"]
+position = Vector2(646.227, 482.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card4" type="Sprite2D" parent="Player2"]
+position = Vector2(798.227, 485.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card5" type="Sprite2D" parent="Player2"]
+position = Vector2(954.227, 484.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Card6" type="Sprite2D" parent="Player2"]
+position = Vector2(1107.23, 486.727)
+texture = ExtResource("2_v4lwb")
+
+[node name="Player1" type="Node2D" parent="."]
+position = Vector2(-22, 47)
+
+[node name="Card0" type="Sprite2D" parent="Player1"]
+position = Vector2(132.5, 481)
+
+[node name="Card1" type="Sprite2D" parent="Player1"]
+position = Vector2(284.5, 481)
+
+[node name="Card2" type="Sprite2D" parent="Player1"]
+position = Vector2(435.5, 481)
+
+[node name="Card3" type="Sprite2D" parent="Player1"]
+position = Vector2(586.5, 483)
+
+[node name="Card4" type="Sprite2D" parent="Player1"]
+position = Vector2(738.5, 486)
+
+[node name="Card5" type="Sprite2D" parent="Player1"]
+position = Vector2(894.5, 485)
+
+[node name="Card6" type="Sprite2D" parent="Player1"]
+position = Vector2(1047.5, 487)
+
+[node name="CardsPlaced" type="Node2D" parent="."]
+
+[node name="0" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(592, 319)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.535816
+texture = ExtResource("2_4nqmx")
+
+[node name="1" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(592, 319)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.326377
+
+[node name="2" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(591, 317)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.445059
+
+[node name="3" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(584, 319)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.294961
+
+[node name="4" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(593.532, 308.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.535816
+
+[node name="5" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(593.532, 308.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.326377
+
+[node name="6" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(592.532, 306.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.445059
+
+[node name="7" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(585.532, 308.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.294961
+
+[node name="8" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(596.532, 304)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.535816
+
+[node name="9" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(596.532, 304)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.326377
+
+[node name="10" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(595.532, 302)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.445059
+
+[node name="11" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(588.532, 304)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.294961
+
+[node name="12" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(598.065, 293.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.535816
+
+[node name="13" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(598.065, 293.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.326377
+
+[node name="14" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(597.065, 291.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.445059
+
+[node name="15" type="Sprite2D" parent="CardsPlaced"]
+position = Vector2(590.065, 293.59)
+scale = Vector2(0.7895, 0.537957)
+skew = -0.294961
